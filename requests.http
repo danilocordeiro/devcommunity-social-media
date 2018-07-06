@@ -7,3 +7,12 @@ http://localhost:5001/api/users/test
 http://localhost:5001/api/posts/test
 ###
 http://localhost:5001/api/profile/test
+###
+POST http://localhost:5001/api/users/register
+Content-Type: application/json
+
+{
+  "name":"Danilo",
+  "email":"danilocordeiro.ti@gmail.com",
+  "password":"123456"
+}
