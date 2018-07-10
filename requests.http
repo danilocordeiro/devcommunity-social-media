@@ -16,3 +16,16 @@ Content-Type: application/json
   "email":"danilocordeiro.ti@gmail.com",
   "password":"123456"
 }
+###
+POST http://localhost:5001/api/users/login
+Content-Type: application/json
+
+{
+  "email":"danilocordeiro.ti@gmail.com",
+  "password":"123456"
+}
+###
+
+http://localhost:5001/api/users/current
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTE4NjczMCwiZXhwIjoxNTMxMTkwMzMwfQ.z2IVtadgmP20vMpvpfF0_Z1FZco6ss1VkX6qcNSH1gk
