@@ -28,7 +28,7 @@ Content-Type: application/json
 
 http://localhost:5001/api/users/current
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTE4NjczMCwiZXhwIjoxNTMxMTkwMzMwfQ.z2IVtadgmP20vMpvpfF0_Z1FZco6ss1VkX6qcNSH1gk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1MTA1MCwiZXhwIjoxNTMxNDU0NjUwfQ.ejms1wMj-2Wl_iMpNrRsWufTRwauCdO5MQY7rfmYySg
 
 ###
 ###teste validation fields
@@ -42,3 +42,31 @@ Content-Type: application/json
   "password_confirmation":"1234568"
 }
 ###
+http://localhost:5001/api/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1MTA1MCwiZXhwIjoxNTMxNDU0NjUwfQ.ejms1wMj-2Wl_iMpNrRsWufTRwauCdO5MQY7rfmYySg
+
+###
+POST http://localhost:5001/api/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1MTA1MCwiZXhwIjoxNTMxNDU0NjUwfQ.ejms1wMj-2Wl_iMpNrRsWufTRwauCdO5MQY7rfmYySg
+
+{
+  "handle":"dandan",
+  "status":"Developer",
+  "skills":"HTML,CSS,JS,Ruby",
+  "company":"oriedroc",
+  "twitter":"jijiji.om",
+  "facebook":"fa.com/dan"
+}
+
+###
+http://localhost:5001/api/profile/handle/dandan
+Content-Type: application/json
+
+###
+http://localhost:5001/api/profile/user/5b3ebeace4d923571ad23b388
+Content-Type: application/json
+###
+http://localhost:5001/api/profile/all
+Content-Type: application/json
