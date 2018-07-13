@@ -70,3 +70,39 @@ Content-Type: application/json
 ###
 http://localhost:5001/api/profile/all
 Content-Type: application/json
+###
+POST http://localhost:5001/api/profile/experience
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1NDc3OSwiZXhwIjoxNTMxNDU4Mzc5fQ.Mke3WWw9xXSwYzNhopO7NnNiNkyo2wuG3RCZ6jT0RoI
+
+{
+  "title":"Developer",
+  "company":"Indra",
+  "from":"2009-02-15"
+}
+###
+POST http://localhost:5001/api/profile/education
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1NDc3OSwiZXhwIjoxNTMxNDU4Mzc5fQ.Mke3WWw9xXSwYzNhopO7NnNiNkyo2wuG3RCZ6jT0RoI
+
+{
+  "school":"IFF",
+  "degree":"SI",
+  "fieldofstudy":"Finaças",
+  "from":"2009-02-15"
+}
+
+###
+DELETE http://localhost:5001/api/profile/experience/5b482b0924a4c220449b326e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1NDc3OSwiZXhwIjoxNTMxNDU4Mzc5fQ.Mke3WWw9xXSwYzNhopO7NnNiNkyo2wuG3RCZ6jT0RoI
+
+###
+DELETE http://localhost:5001/api/profile/education/5b482b76a125ee208dc6d475
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1NDc3OSwiZXhwIjoxNTMxNDU4Mzc5fQ.Mke3WWw9xXSwYzNhopO7NnNiNkyo2wuG3RCZ6jT0RoI
+
+###
+DELETE http://localhost:5001/api/profile/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1NDc3OSwiZXhwIjoxNTMxNDU4Mzc5fQ.Mke3WWw9xXSwYzNhopO7NnNiNkyo2wuG3RCZ6jT0RoI
