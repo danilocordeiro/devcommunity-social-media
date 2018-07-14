@@ -117,3 +117,15 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNDlkOWNjN
   "text":"Eshjdhs sjdks sdjhlsk sjdlsd sdljsd"
 }
 
+###
+http://localhost:5001/api/posts
+Content-Type: application/json
+
+###
+http://localhost:5001/api/posts/5b49db21cbef711fa9bcb875
+Content-Type: application/json
+
+###
+DELETE http://localhost:5001/api/posts/5b49db21cbef711fa9bcb875
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNDlkOWNjNDc3YTlmMWRlMmQ3ODQyYyIsIm5hbWUiOiJkYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTU3MTY4MSwiZXhwIjoxNTMxNTc1MjgxfQ.bDglwo545yY3FSrYao2OzlJk_uINPh8MKyotz-Z82Ig
