@@ -12,9 +12,10 @@ POST http://localhost:5001/api/users/register
 Content-Type: application/json
 
 {
-  "name":"p",
+  "name":"danilo",
   "email":"danilocordeiro.ti@gmail.com",
-  "password":"123456"
+  "password":"123456",
+  "password_confirmation":"123456"
 }
 ###
 POST http://localhost:5001/api/users/login
@@ -106,3 +107,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZ
 DELETE http://localhost:5001/api/profile/
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViM2ViZWFjZTRkOTIzNTcxYWQyM2IzOCIsIm5hbWUiOiJEYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTQ1NDc3OSwiZXhwIjoxNTMxNDU4Mzc5fQ.Mke3WWw9xXSwYzNhopO7NnNiNkyo2wuG3RCZ6jT0RoI
+
+###
+POST http://localhost:5001/api/posts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNDlkOWNjNDc3YTlmMWRlMmQ3ODQyYyIsIm5hbWUiOiJkYW5pbG8iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzJjNWM2ZDg1ZjM1NjEzZWViODk3MTAxNDc4ZTQ1NjA2P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTUzMTU2NjU1MSwiZXhwIjoxNTMxNTcwMTUxfQ.FY6wcpG79vfE9yFpdrEQt_FrUwhwhUdLCori5v0SvBI
+ 
+{
+  "text":"Eshjdhs sjdks sdjhlsk sjdlsd sdljsd"
+}
+
