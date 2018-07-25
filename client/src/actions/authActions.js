@@ -16,7 +16,7 @@ export const registeruser = (userData, history) => dispatch => {
       );
 }
 
-export const loginUSer = userData => dispatch => {
+export const loginUser = userData => dispatch => {
   axios.post('/api/users/login', userData)
     .then(res => {
       const { token } = res.data;
@@ -36,7 +36,7 @@ export const loginUSer = userData => dispatch => {
     );
 }
 
-export const setCurrentUser = (decoded) => {
+export const setCurrentUser = decoded => {
   return {
     type: SET_CURRENT_USER,
     payload: decoded
